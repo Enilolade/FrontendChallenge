@@ -1,0 +1,136 @@
+/* General styling */
+/* Tags */
+html,
+body {
+ box-sizing: border-box;
+ height: 100vh;
+ font-size: 0.94rem;
+ font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+ font-weight: 400;
+}
+
+h2 {
+ color: hsl(0, 0%, 95%);
+ text-transform: uppercase;
+ font-family: "Big Shoulders Display", Arial, Helvetica, sans-serif;
+ font-weight: 700;
+}
+
+p {
+ color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+ border-radius: 1.25rem;
+ background-color: hsl(0, 0%, 95%);
+ padding: 0.6rem;
+ border: none;
+ width: 7rem;
+ font-weight: bold;
+}
+
+/* Classes */
+.attribution {
+ font-size: 11px;
+ text-align: center;
+ margin: 1rem;
+}
+
+.attribution a {
+ color: hsl(228, 45%, 44%);
+}
+
+.sedan {
+ background-color: hsl(31, 77%, 52%);
+}
+
+.sedan button {
+ color: hsl(31, 77%, 52%);
+}
+
+.suv {
+ background-color: hsl(184, 100%, 22%);
+}
+
+.suv button {
+ color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+ background-color: hsl(179, 100%, 13%);
+}
+
+.luxury button {
+ color: hsl(179, 100%, 13%);
+}
+
+/* Screen Styling */
+@media screen and (max-width: 600px) {
+ body {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+ }
+
+ h2,
+ p {
+  margin-left: 3rem;
+ }
+
+ img {
+  margin: 2rem auto auto 3rem;
+ }
+
+ button {
+  margin: 0 0 2.5rem 3rem;
+ }
+
+ p {
+  line-height: 2;
+  width: 14rem;
+ }
+
+ .container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 1rem;
+  margin: auto;
+ }
+
+ .sedan {
+  border-radius: 0.7rem 0.7rem 0 0;
+ }
+
+ .luxury {
+  border-radius: 0 0 0.7rem 0.7rem;
+ }
+}
+
+@media screen and (min-width: 800px) {
+
+ button,
+ h2,
+ img,
+ p {
+  margin: 2rem;
+ }
+
+ p {
+  line-height: 2;
+ }
+
+ .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  padding-top: 5rem;
+  width: 46.8rem;
+ }
+
+ .sedan {
+  border-radius: 0.5rem 0 0 0.5rem;
+ }
+
+ .luxury {
+  border-radius: 0 0.5rem 0.5rem 0;
+ }
+}
